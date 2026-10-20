@@ -54,25 +54,18 @@ h1 em { color: var(--rose); font-weight: 500; }
 .flower i:nth-child(5) { transform: rotate(240deg); }
 .flower i:nth-child(6) { transform: rotate(300deg); }
 .flower b { position: absolute; top: 40px; left: 39px; width: 22px; height: 22px; border-radius: 50%; background: #f8d18c; box-shadow: inset 0 0 0 5px #efb967; }
-.flower-one { top: 58px; left: 153px; transform: scale(1.14) rotate(-8deg); }
-.flower-two { top: 143px; left: 62px; transform: scale(.78) rotate(12deg); }
-.flower-three { top: 153px; right: 42px; transform: scale(.92) rotate(5deg); }
+.flower-one { top: 58px; left: calc(50% - 50px); transform: scale(1.14) rotate(-8deg); }
+.flower-two { top: 143px; left: calc(50% - 140px); transform: scale(.78) rotate(12deg); }
+.flower-three { top: 153px; left: calc(50% + 40px); transform: scale(.92) rotate(5deg); }
 .stem { position: absolute; z-index: 2; top: 151px; width: 3px; height: 194px; border-radius: 10px; background: linear-gradient(#729071, #55765d); transform-origin: top; }
-.stem-one { left: 205px; transform: rotate(-5deg); }
-.stem-two { left: 133px; top: 217px; height: 133px; transform: rotate(14deg); }
-.stem-three { left: 274px; top: 226px; height: 128px; transform: rotate(-14deg); }
+.stem-one { left: calc(50% - 1px); transform: rotate(-5deg); }
+.stem-two { left: calc(50% - 91px); top: 217px; height: 133px; transform: rotate(14deg); }
+.stem-three { left: calc(50% + 89px); top: 226px; height: 128px; transform: rotate(-14deg); }
 .leaf { position: absolute; z-index: 3; width: 50px; height: 23px; background: linear-gradient(135deg, #91a987, #63856b); border-radius: 100% 0 100% 0; }
-.leaf-one { top: 225px; left: 163px; transform: rotate(18deg); }
-.leaf-two { top: 273px; left: 201px; transform: rotate(194deg) scale(.85); }
-.leaf-three { top: 278px; left: 112px; transform: rotate(21deg) scale(.8); }
-.wrap-paper { position: absolute; z-index: 5; top: 243px; left: 112px; width: 247px; height: 166px; background: linear-gradient(115deg, rgba(255,255,255,.8), rgba(251,228,218,.92)); clip-path: polygon(10% 0, 90% 0, 69% 100%, 50% 82%, 31% 100%); filter: drop-shadow(0 10px 7px rgba(118,72,73,.12)); }
-.wrap-paper::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 26px, rgba(206,143,141,.13) 27px 28px); clip-path: inherit; }
-.wrap-ribbon { position: absolute; z-index: 6; top: 329px; left: 212px; width: 42px; height: 43px; border: 5px solid #c66e7e; border-radius: 50% 50% 45% 45%; transform: rotate(8deg); }
-.wrap-ribbon::before, .wrap-ribbon::after { content: ""; position: absolute; top: 24px; width: 24px; height: 40px; border: 4px solid #c66e7e; border-top: 0; }
-.wrap-ribbon::before { left: -15px; transform: rotate(22deg); clip-path: polygon(0 0,100% 0,70% 100%,40% 85%); }
-.wrap-ribbon::after { right: -15px; transform: rotate(-22deg); clip-path: polygon(0 0,100% 0,60% 85%,30% 100%); }
-.art-caption { position: absolute; z-index: 7; top: 368px; left: 174px; display: flex; align-items: center; gap: 6px; color: #9a616e; font-family: "Playfair Display", Georgia, serif; font-size: 12px; font-style: italic; transform: rotate(-8deg); }
-.caption-heart { color: #cb7584; font-family: sans-serif; font-size: 10px; }
+.leaf-one { top: 225px; left: calc(50% - 39px); transform: rotate(18deg); }
+.leaf-two { top: 273px; left: calc(50% - 16px); transform: rotate(194deg) scale(.85); }
+.leaf-three { top: 278px; left: calc(50% - 126px); transform: rotate(21deg) scale(.8); }
+.leaf-four { top: 267px; left: calc(50% + 78px); transform: rotate(18deg) scale(.9); }
 .art-spark { position: absolute; z-index: 8; color: #d18b81; }
 .spark-a { top: 104px; right: 68px; font-size: 24px; }
 .spark-b { top: 220px; left: 33px; font-size: 24px; }
@@ -131,15 +124,12 @@ h1 em { color: var(--rose); font-weight: 500; }
   .photo-card img { height: clamp(170px, 54vw, 270px); }
   .photo-card figcaption { font-size: 10px; }
   .sun-disc { width: 270px; height: 270px; }
-  .flower-one { left: calc(50% - 48px); }
-  .flower-two { left: calc(50% - 139px); }
-  .flower-three { right: calc(50% - 160px); }
-  .stem-one { left: calc(50% + 4px); }
-  .stem-two { left: calc(50% - 68px); }
-  .stem-three { left: calc(50% + 72px); }
-  .wrap-paper { left: calc(50% - 123px); }
-  .wrap-ribbon { left: calc(50% - 23px); }
-  .art-caption { left: calc(50% - 60px); }
+  .flower-one { left: calc(50% - 50px); }
+  .flower-two { left: calc(50% - 140px); }
+  .flower-three { left: calc(50% + 40px); }
+  .stem-one { left: calc(50% - 1px); }
+  .stem-two { left: calc(50% - 91px); }
+  .stem-three { left: calc(50% + 89px); }
   .footer { flex-wrap: wrap; gap: 9px; padding: 15px 0; font-size: 9px; }
   .toast { gap: 10px; min-height: 205px; padding: 50px 25px 32px; }
   .toast::before { top: 25px; font-size: 9px; }
